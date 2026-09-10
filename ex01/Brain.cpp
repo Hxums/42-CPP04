@@ -1,46 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*   Brain.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hcissoko <hcissoko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/03 17:38:34 by hcissoko          #+#    #+#             */
-/*   Updated: 2026/09/09 19:36:11 by hcissoko         ###   ########.fr       */
+/*   Created: 2026/09/08 17:01:20 by hcissoko          #+#    #+#             */
+/*   Updated: 2026/09/08 20:10:06 by hcissoko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string>
 #include <iostream>
-#include "Cat.hpp"
+#include "Brain.hpp"
 
-Cat::Cat() : Animal()
+Brain::Brain()
 {
-	this->type_ = "Cat";
-    std::cout << "Cat created" << std::endl;
+    std::cout << "Default Brain created" << std::endl;
 }
 
-Cat::Cat(const Cat& src) : Animal(src)
+Brain::Brain(const Brain& src)
 {
-    std::cout << "Cat copied" << std::endl;
+    for (int i = 0; i < 100; i++)
+        this->ideas_[i] = src.ideas_[i];
+    std::cout << "Brain copied" << std::endl;
 }
 
-Cat& Cat::operator=(const Cat& rhs)
+Brain& Brain::operator=(const Brain& rhs)
 {
     if (this != &rhs)
     {
-        this->type_ = rhs.type_;
-        std::cout << "Cat assigned" << std::endl;
+        for (int i = 0; i < 100; i++)
+            this->ideas_[i] = rhs.ideas_[i];
+        std::cout << "Brain assigned" << std::endl;
     }
     return *this;
 }
 
-Cat::~Cat(void)
+Brain::~Brain(void)
 {
-    std::cout << "Cat destroyed" << std::endl;
-}
-
-void Cat::makeSound() const
-{
-	std::cout << "Meow\n";
+    std::cout << "Brain destroyed" << std::endl;
 }

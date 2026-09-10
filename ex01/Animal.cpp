@@ -6,7 +6,7 @@
 /*   By: hcissoko <hcissoko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/03 17:32:30 by hcissoko          #+#    #+#             */
-/*   Updated: 2026/09/08 16:49:11 by hcissoko         ###   ########.fr       */
+/*   Updated: 2026/09/09 19:46:54 by hcissoko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,14 @@
 Animal::Animal(std::string type)
 {
 	this->type_ = type;
+    this->brain_ = new Brain();
     std::cout << "Animal of type " << this->type_ << " created ";
 }
 
 Animal::Animal()
 {
-	this->type_ = "No type defined";
+	this->type_ = "[undefined]";
+    this->brain_ = new Brain();
     std::cout << "Default Animal created" << std::endl;
 }
 
@@ -43,6 +45,7 @@ Animal& Animal::operator=(const Animal& rhs)
 
 Animal::~Animal(void)
 {
+    delete this->brain_;
     std::cout << "Animal " << this->type_ << " destroyed" << std::endl;
 }
 
