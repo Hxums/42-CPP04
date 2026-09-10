@@ -1,0 +1,7 @@
+# Compiled objects
+*.o
+*.exe
+# VSCode
+.vscode/
+# macOS
+.DS_Store
