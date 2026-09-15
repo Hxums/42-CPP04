@@ -1,35 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   AMateria.cpp                                       :+:      :+:    :+:   */
+/*   Fire.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hcissoko <hcissoko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/15 20:18:38 by hcissoko          #+#    #+#             */
-/*   Updated: 2026/09/15 22:55:31 by hcissoko         ###   ########.fr       */
+/*   Created: 2026/09/15 23:01:06 by hcissoko          #+#    #+#             */
+/*   Updated: 2026/09/15 23:09:48 by hcissoko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "AMateria.hpp"
 #include <iostream>
+#include "Fire.hpp"
 
-AMateria::AMateria(std::string const & type)
+Fire::Fire() : AMateria("fire")
+{}
+
+Fire::Fire(Fire const& src) : AMateria("fire")
 {
-	this->type_ = type;
-	std::cout << "[" << this->type_ << "] AMateria constructor called\n";
 }
 
-AMateria::AMateria(void)
-{
-	std::cout << "AMateria default constructor called\n";
-}
-
-AMateria::AMateria(const AMateria& src)
-{
-    this->type_ = src.type_;
-	std::cout << "[" << this->type_ << "] AMateria copy constructor called\n";
-}
-
+/*
+TODO
 AMateria& AMateria::operator=(const AMateria& rhs)
 {
     if (this != &rhs)
@@ -52,4 +44,6 @@ const std::string& AMateria::getType() const
 void AMateria::use(ICharacter& target)
 {
 	std::cout << "Function use called on AMateria\n";
+
 }
+*/
