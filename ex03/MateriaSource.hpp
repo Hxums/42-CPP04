@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Fire.hpp                                           :+:      :+:    :+:   */
+/*   MateriaSource.hpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hcissoko <hcissoko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/15 22:05:59 by hcissoko          #+#    #+#             */
-/*   Updated: 2026/09/15 23:04:38 by hcissoko         ###   ########.fr       */
+/*   Created: 2026/09/15 21:55:57 by hcissoko          #+#    #+#             */
+/*   Updated: 2026/09/17 02:58:26 by hcissoko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FIRE_HPP
-# define FIRE_HPP
+#ifndef MATERIASOURCE_HPP
+# define MATERIASOURCE_HPP
 
-#include "AMateria.hpp"
+#include "IMateriaSource.hpp"
 
-class Fire: public AMateria
+class MateriaSource
 {
-    private:
-    public:
-        Fire(void);
-        Fire(const Fire& src);
-        Fire&	operator=(const Fire& rhs);
-        virtual	~Fire(void);
-		virtual void	use(ICharacter& target);
+	public:
+	virtual ~MateriaSource() {}
+	virtual void learnMateria(AMateria*);
+	virtual AMateria* createMateria(std::string const & type);
 };
 
 #endif

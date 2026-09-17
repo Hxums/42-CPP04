@@ -6,7 +6,7 @@
 /*   By: hcissoko <hcissoko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 20:18:38 by hcissoko          #+#    #+#             */
-/*   Updated: 2026/09/15 22:55:31 by hcissoko         ###   ########.fr       */
+/*   Updated: 2026/09/17 02:13:38 by hcissoko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,7 @@ AMateria::AMateria(const AMateria& src)
 
 AMateria& AMateria::operator=(const AMateria& rhs)
 {
-    if (this != &rhs)
-    {
-        this->type_ = rhs.type_;
-    }
+    (void)rhs;
     return *this;
 }
 

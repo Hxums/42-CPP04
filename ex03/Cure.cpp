@@ -1,49 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Fire.cpp                                           :+:      :+:    :+:   */
+/*   Cure.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hcissoko <hcissoko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 23:01:06 by hcissoko          #+#    #+#             */
-/*   Updated: 2026/09/15 23:09:48 by hcissoko         ###   ########.fr       */
+/*   Updated: 2026/09/17 02:32:34 by hcissoko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "Fire.hpp"
+#include "Cure.hpp"
 
-Fire::Fire() : AMateria("fire")
-{}
 
-Fire::Fire(Fire const& src) : AMateria("fire")
+Cure::Cure() : AMateria("cure"){}
+
+Cure::Cure(Cure const& src) : AMateria("cure"){}
+
+Cure & Cure::operator=(Cure const & rhs)
 {
+    AMateria::operator=(rhs);
+	return *this;
 }
 
-/*
-TODO
-AMateria& AMateria::operator=(const AMateria& rhs)
-{
-    if (this != &rhs)
-    {
-        this->type_ = rhs.type_;
-    }
-    return *this;
-}
+Cure::~Cure() {}
 
-AMateria::~AMateria(void)
-{
-	std::cout << "[" << this->type_ << "] AMateria destructor called\n";
-}
-
-const std::string& AMateria::getType() const
-{
-	return this->type_;
-}
+AMateria* Cure::clone() const{}
 
 void AMateria::use(ICharacter& target)
 {
-	std::cout << "Function use called on AMateria\n";
-
+	std::cout << "* heals " << target.getName() << "'s wounds *";
 }
-*/
