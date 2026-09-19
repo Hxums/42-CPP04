@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   MateriaSource.hpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hcissoko <hcissoko@student.42.fr>          +#+  +:+       +#+        */
+/*   By: houms <houms@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 21:55:57 by hcissoko          #+#    #+#             */
-/*   Updated: 2026/09/17 02:58:26 by hcissoko         ###   ########.fr       */
+/*   Updated: 2026/09/19 10:36:02 by houms            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,18 @@
 # define MATERIASOURCE_HPP
 
 #include "IMateriaSource.hpp"
+#include "AMateria.hpp"
 
-class MateriaSource
+class MateriaSource : public IMateriaSource
 {
+	private:
+		AMateria*	_inventory[4];
 	public:
-	virtual ~MateriaSource() {}
-	virtual void learnMateria(AMateria*);
+	MateriaSource(void);
+	MateriaSource(const MateriaSource& src);
+	MateriaSource&	operator=(const MateriaSource& rhs);
+	virtual ~MateriaSource();
+	virtual void learnMateria(AMateria* m);
 	virtual AMateria* createMateria(std::string const & type);
 };
 

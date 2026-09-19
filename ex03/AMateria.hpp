@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   AMateria.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hcissoko <hcissoko@student.42.fr>          +#+  +:+       +#+        */
+/*   By: houms <houms@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 20:18:38 by hcissoko          #+#    #+#             */
-/*   Updated: 2026/09/15 22:48:50 by hcissoko         ###   ########.fr       */
+/*   Updated: 2026/09/19 09:32:23 by houms            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define AMATERIA_HPP
 
 #include <string>
-#include "ICharacter.hpp"
+class ICharacter;
 
 class AMateria
 {

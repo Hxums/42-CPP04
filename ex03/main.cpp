@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hcissoko <hcissoko@student.42.fr>          +#+  +:+       +#+        */
+/*   By: houms <houms@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/17 02:50:28 by hcissoko          #+#    #+#             */
-/*   Updated: 2026/09/17 02:53:59 by hcissoko         ###   ########.fr       */
+/*   Updated: 2026/09/19 15:34:27 by houms            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "AMateria.hpp"
 #include "Ice.hpp"
+#include "Cure.hpp"
 #include "ICharacter.hpp"
 #include "IMateriaSource.hpp"
 #include "Character.hpp"
