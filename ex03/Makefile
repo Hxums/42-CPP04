@@ -1,4 +1,4 @@
-NAME    = animal
+NAME    = materia
 CXX     = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 SRCS    = AMateria.cpp  Character.cpp  Cure.cpp  Ice.cpp  main.cpp  MateriaSource.cpp

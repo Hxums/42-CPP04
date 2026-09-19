@@ -6,7 +6,7 @@
 /*   By: hcissoko <hcissoko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 22:06:03 by hcissoko          #+#    #+#             */
-/*   Updated: 2026/09/17 02:01:34 by hcissoko         ###   ########.fr       */
+/*   Updated: 2026/09/19 19:24:45 by hcissoko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define ICE_HPP
 
 #include "AMateria.hpp"
-#include "ICharacter.hpp"
 
 class Ice: public AMateria
 {
