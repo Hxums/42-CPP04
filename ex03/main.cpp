@@ -6,7 +6,7 @@
 /*   By: hcissoko <hcissoko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/17 02:50:28 by hcissoko          #+#    #+#             */
-/*   Updated: 2026/09/19 22:39:34 by hcissoko         ###   ########.fr       */
+/*   Updated: 2026/09/30 10:16:33 by hcissoko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,4 +76,5 @@ int	main()
 	delete bob;
 	delete src;
 	delete you;
+	delete tmp;
 }
