@@ -6,7 +6,7 @@
 /*   By: hcissoko <hcissoko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/19 08:13:24 by houms             #+#    #+#             */
-/*   Updated: 2026/09/19 22:28:01 by hcissoko         ###   ########.fr       */
+/*   Updated: 2026/10/05 20:04:07 by hcissoko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ void Character::equip(AMateria* m)
         if (this->_inventory[i] == NULL)
         {
             _inventory[i] = m;
-            std::cout << m->getType() << " equiped at slot " << i << "\n";
+            // std::cout << m->getType() << " equiped at slot " << i << "\n";
             break;
         }
     }
