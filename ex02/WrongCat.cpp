@@ -18,7 +18,7 @@
 WrongCat::WrongCat(std::string type) : WrongAnimal(type)
 {
 	this->type_ = type;
-    std::cout << "WrongCat of type " << this->type_ << " created ";
+    std::cout << "WrongCat of type " << this->type_ << " created " << std::endl;
 }
 
 WrongCat::WrongCat() : WrongAnimal()
