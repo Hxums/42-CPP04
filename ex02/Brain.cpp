@@ -6,7 +6,7 @@
 /*   By: hcissoko <hcissoko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/08 17:01:20 by hcissoko          #+#    #+#             */
-/*   Updated: 2026/09/08 20:10:06 by hcissoko         ###   ########.fr       */
+/*   Updated: 2026/10/05 17:52:05 by hcissoko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,17 @@ Brain& Brain::operator=(const Brain& rhs)
 Brain::~Brain(void)
 {
     std::cout << "Brain destroyed" << std::endl;
+}
+
+std::string Brain::getIdea(int index)
+{
+    if (index >= 0 && index < 100)
+        return this->ideas_[index];
+    return NULL;
+}
+
+void    Brain::setIdea(int index, std::string idea)
+{
+    if (index >= 0 && index < 100)
+        this->ideas_[index] = idea;
 }

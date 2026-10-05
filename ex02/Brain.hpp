@@ -6,7 +6,7 @@
 /*   By: hcissoko <hcissoko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/08 16:57:22 by hcissoko          #+#    #+#             */
-/*   Updated: 2026/09/08 20:03:45 by hcissoko         ###   ########.fr       */
+/*   Updated: 2026/10/05 17:53:16 by hcissoko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ class Brain
         Brain(const Brain& src);
         Brain& operator=(const Brain& rhs);
 		~Brain(void);
+		std::string	getIdea(int index);
+		void		setIdea(int index, std::string idea);
 };
 
 #endif
