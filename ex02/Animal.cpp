@@ -6,7 +6,7 @@
 /*   By: hcissoko <hcissoko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/03 17:32:30 by hcissoko          #+#    #+#             */
-/*   Updated: 2026/10/03 22:49:08 by hcissoko         ###   ########.fr       */
+/*   Updated: 2026/10/05 20:03:15 by hcissoko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,11 +44,6 @@ Animal& Animal::operator=(const Animal& rhs)
 Animal::~Animal(void)
 {
     std::cout << "Animal " << this->type_ << " destroyed" << std::endl;
-}
-
-void Animal::makeSound() const
-{
-	std::cout << "Sound undefined\n";
 }
 
 std::string Animal::getType() const
