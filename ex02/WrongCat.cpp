@@ -23,7 +23,7 @@ WrongCat::WrongCat(std::string type) : WrongAnimal(type)
 
 WrongCat::WrongCat() : WrongAnimal()
 {
-	this->type_ = "No type defined";
+	this->type_ = "Wrong Cat";
     std::cout << "Default WrongCat created" << std::endl;
 }
 
